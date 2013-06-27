@@ -1,0 +1,7 @@
+#!/bin/bash
+git config user.name "mark-huang"
+git config user.email hacker.do@163.com
+git config core.editor vim
+git config core.paper "less -N"
+git config color.diff true
+git config alias.co checkout
