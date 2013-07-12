@@ -6,3 +6,9 @@ all:
 
 clean:
 	rm *.class *.jar
+
+doc: *.java
+	rm doc/* -rf
+	javadoc  -encoding UTF-8 -charset UTF-8 -author *.java
+	mv *.html *.css package-list resources doc/
+	xdg-open doc/index.html
